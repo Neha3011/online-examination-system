@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "630c92b956ae1962db36"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0eeb2f5593682b7072bb"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -34374,26 +34374,22 @@ var Student = function (_React$Component) {
                       );
                     }
                   }(),
-                  function () {
-                    if (question.get('answers').size) {
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'questions__options' },
+                    _react2.default.createElement(
+                      'b',
+                      null,
+                      'Options:'
+                    ),
+                    question.get('answers').map(function (answer) {
                       return _react2.default.createElement(
                         'div',
-                        { className: 'questions__options' },
-                        _react2.default.createElement(
-                          'b',
-                          null,
-                          'Options:'
-                        ),
-                        question.get('answers').map(function (answer) {
-                          return _react2.default.createElement(
-                            'div',
-                            null,
-                            answer.get('option')
-                          );
-                        })
+                        null,
+                        answer.get('option')
                       );
-                    }
-                  }()
+                    })
+                  )
                 );
               }
             });
@@ -34429,7 +34425,7 @@ var Student = function (_React$Component) {
           }
         }(),
         this.props.exam.get('studentList').map(function (student, key) {
-          if (student.get('id') === 20) {
+          if (student.get('id') === 20 && student.get('question').size) {
             return _react2.default.createElement(
               'div',
               { className: 'assign__question' },
@@ -64462,7 +64458,8 @@ var AssignQuestion = function (_React$Component) {
                   _reactBootstrap.Button,
                   {
                     bsStyle: 'primary',
-                    onClick: this.toggleViewStudents
+                    onClick: this.toggleViewStudents,
+                    disabled: this.state.assigned.length === 0
                   },
                   'Assign'
                 )
@@ -64604,36 +64601,11 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var initialState = (0, _immutable.fromJS)({
   'exam': {
-    'questions': [{
-      'id': 4,
-      'title': 'title',
-      'description': 'description'
-    }, {
-      'id': 3,
-      'title': 'title',
-      'description': 'description',
-      'answers': [{
-        'option': 'A',
-        'isAnswer': false
-      }, {
-        'option': 'B',
-        'isAnswer': false
-      }, {
-        'option': 'C',
-        'isAnswer': false
-      }, {
-        'option': 'D',
-        'isAnswer': false
-      }]
-    }, {
-      'id': 2,
-      'title': 'title',
-      'description': 'description'
-    }],
+    'questions': [],
     'studentList': [{
       'id': 20,
       'name': 'Neha',
-      'question': [3]
+      'question': []
     }, {
       'id': 21,
       'name': 'Nidhi',
