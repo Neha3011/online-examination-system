@@ -31,6 +31,7 @@ const config = {
       })
     }, {
       'test': /\.(woff(2)?|ttf|eot|svg)?$/,
+      'exclude': /images/, // Don't run this on images or else svg image paths would be screwed
       'loader': 'file-loader?name=fonts/[name].[hash].[ext]'
     }, {
       'test': /\.(jpe?g|png|gif|svg)$/i,
