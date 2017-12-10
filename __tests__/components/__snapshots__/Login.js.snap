@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Login: 1`] = `
+<div
+  className="exam__login"
+>
+  <a
+    href="#/author"
+    onClick={[Function]}
+  >
+    <button
+      className="exam__login__button exam__login__button--author"
+    >
+      Login as Author
+    </button>
+  </a>
+  <a
+    href="#/student"
+    onClick={[Function]}
+  >
+    <button
+      className="exam__login__button exam__login__button--student"
+    >
+      Login as Student
+    </button>
+  </a>
+</div>
+`;

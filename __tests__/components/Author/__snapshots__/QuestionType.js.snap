@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render QuestionType: 1`] = `
+<form
+  className=""
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor={undefined}
+    >
+      Question Title:
+    </label>
+    <input
+      className="form-control"
+      id={undefined}
+      onChange={[Function]}
+      placeholder="Type your question title here..."
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor={undefined}
+    >
+      Question Description:
+    </label>
+    <input
+      className="form-control"
+      id={undefined}
+      onChange={[Function]}
+      placeholder="Type your question description here..."
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor={undefined}
+    >
+      Instructions:
+    </label>
+    <input
+      className="form-control"
+      id={undefined}
+      onChange={[Function]}
+      placeholder="Type instructions here... (eg: file size, file format, etc.)"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <div
+      className="paddingNone col-sm-8"
+    >
+      Click author to create a new question and will be added automatically to the question list.
+    </div>
+    <div
+      className="author__btn col-sm-2"
+    >
+      <button
+        className="btn btn-default"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel
+      </button>
+    </div>
+    <div
+      className="author__btn col-sm-2"
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Author
+      </button>
+    </div>
+  </div>
+</form>
+`;

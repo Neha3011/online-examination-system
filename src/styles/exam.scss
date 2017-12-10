@@ -1,0 +1,72 @@
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+.exam {
+  display: flex;
+  flex-direction: column;
+  .exam__header {
+    display: flex;
+    height: 64px;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    img {
+      width: 120px;
+    }
+
+    .logout {
+      color: #ffffff;
+      text-decoration: none;
+
+      &:hover {
+        color: #ED4243;
+      }
+    }
+  }
+
+  .exam__login {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-self: center;
+    margin-top: 64px;
+
+    .exam__login__button {
+      width: 100%;
+      height: 40px;
+      margin: 5px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+
+      &--author {
+        background: #ED4243;
+      }
+
+      &--student {
+        background: #0f906d;
+      }
+    }
+  }
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.paddingNone {
+  padding: 0;
+}
+
+.marginNone {
+  margin: 0;
+}
