@@ -3,36 +3,11 @@ import * as types from '../constants/ActionTypes';
 
 const initialState = fromJS({
   'exam': {
-    'questions': [{
-      'id': 4,
-      'title': 'title',
-      'description': 'description'
-    }, {
-      'id': 3,
-      'title': 'title',
-      'description': 'description',
-      'answers': [{
-        'option': 'A',
-        'isAnswer': false
-      }, {
-        'option': 'B',
-        'isAnswer': false
-      }, {
-        'option': 'C',
-        'isAnswer': false
-      }, {
-        'option': 'D',
-        'isAnswer': false
-      }]
-    }, {
-      'id': 2,
-      'title': 'title',
-      'description': 'description'
-    }],
+    'questions': [],
     'studentList': [{
       'id': 20,
       'name': 'Neha',
-      'question': [3]
+      'question': []
     }, {
       'id': 21,
       'name': 'Nidhi',

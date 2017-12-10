@@ -50,22 +50,16 @@ class Student extends React.Component {
                               );
                             }
                           })()}
-                          {(() => {
-                            if (question.get('answers').size) {
-                              return (
-                                <div className="questions__options">
-                                 <b>Options:</b>
-                                  {
-                                    question.get('answers').map((answer) => {
-                                      return (
-                                          <div>{answer.get('option')}</div>
-                                      );
-                                    })
-                                  }
-                                </div>
-                              )
+                          <div className="questions__options">
+                            <b>Options:</b>
+                            {
+                              question.get('answers').map((answer) => {
+                                return (
+                                    <div>{answer.get('option')}</div>
+                                );
+                              })
                             }
-                          })()}
+                          </div>
                         </div>
                     )
                   }
@@ -95,7 +89,7 @@ class Student extends React.Component {
           })()}
           {
             this.props.exam.get('studentList').map((student, key) => {
-              if (student.get('id') === 20) {
+              if (student.get('id') === 20 && student.get('question').size) {
                 return (
                     <div className="assign__question">
                       <div className="assign__question__container">

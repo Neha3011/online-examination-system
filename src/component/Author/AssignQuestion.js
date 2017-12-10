@@ -91,6 +91,7 @@ class AssignQuestion extends React.Component {
                 <Button
                   bsStyle="primary"
                   onClick={this.toggleViewStudents}
+                  disabled={this.state.assigned.length === 0}
                 >
                   Assign
                 </Button>
