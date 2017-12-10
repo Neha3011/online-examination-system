@@ -1,26 +1,19 @@
-##Pharmeasy
-This is a very basic demo app, to imitate an online medicine purchase system.
-There can be 3 types of users:
-1) Patient: 
-Patient can perform following actions:
-    a. can add prescriptions. Currently he can add prescription with maximum 3 medicines.
-    b. can view prescriptions and see pending actions
-    c. can allow pharmacist or doctor to have access to the prescription
+##Online Examination System
+This is a very basic demo app, to imitate an online examination system.
+There can be 2 types of users:
+1) Author: 
+Author can perform following actions:
+    a. can add questions. There can be MCQ, Submission & Passage type of question.
+    b. can assign questions to students
 
-2) Doctor:
-Doctor can perform following actions:
-    a. can see the list of prescriptions but not the content of the prescription unless patient allows access to it
-    b. can view prescriptions when given access
-
-3) Pharmacist:
-Pharmacist can perform following actions:
-    a. can see the list of prescriptions but not the content of the prescription unless patient allows access to it
-    b. can view prescriptions when given access
+2) Student:
+Student can perform following actions:
+    b. can view assigned questions by the author
 
 ### Follow steps to run the project
 
 ```sh
-1) git clone https://github.com/Neha3011/patient-records.git
+1) git clone https://github.com/Neha3011/online-examination-system.git
 2) npm install
 3) npm start (to develop locally)
 ```
